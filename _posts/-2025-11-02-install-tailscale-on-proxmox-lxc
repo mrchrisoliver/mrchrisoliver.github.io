@@ -26,9 +26,21 @@ features: keyctl=1,nesting=1
 lxc.cgroup2.devices.allow = c 10:200 rwm
 lxc.mount.entry = /dev/net/tun dev/net/tun none bind,create=file
 ```
-The LXC is started again and Tailscale can be ran
+The LXC is started again and Tailscale can be ran, you will have to login/have an Tailscale account. 
 ```
 sudo tailscale up --advertise-exit-node --advertise-routes=192.168.1.0/24
 ```
+This showed errors as the LXC isn't forwarding ports. Changing these in LXC made it work:
+```
+sysctl -w net.ipv4.ip_forward=1
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
+And persist it in
+```
+nano /etc/sysctl.conf
+```
+```
+net.ipv4.ip_forward=1
+```
 
-
+Now it works, and you can access Proxmox via LXC!

@@ -1,8 +1,6 @@
 ---
 title: Homelab - The Prologue 
 date: 2025-10-22 15:00:00 +0100
-categories: [Homelab]
-tags: [homelab]
 ---
 
 Welcome, my name is Chris, I like tech, blah blah blah.

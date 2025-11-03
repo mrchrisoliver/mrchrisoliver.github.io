@@ -1,5 +1,5 @@
 ---
-title: Homelab - Intall Tailscale on Proxmox LXC 
+title: Homelab - Install Tailscale on Proxmox LXC 
 date: 2025-11-02 15:00:00 +0100
 categories: [Homelab]
 tags: [homelab]

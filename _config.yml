@@ -16,30 +16,30 @@ timezone:
 
 title: MCO # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: A Homelab Journey # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  A minimal blog following the journey of a web dev diving into the self-hosted world.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://mrchrisoliver.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: mrchrisoliver # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: mrchrxs # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Chris
-  email: example@domain.com # change to your email address
+  #email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://twitter.com/mrchrxs # change to your Twitter homepage
+    - https://github.com/mrchrisoliver # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -217,7 +217,7 @@ exclude:
   - "package*.json"
 
 jekyll-archives:
-  enabled: [categories, tags]
+  #enabled: [categories, tags]
   layouts:
     category: category
     tag: tag

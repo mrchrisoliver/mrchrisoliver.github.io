@@ -1,8 +1,6 @@
 ---
 title: Homelab - Install Tailscale on Proxmox LXC 
 date: 2025-11-02 15:00:00 +0100
-categories: [Homelab]
-tags: [homelab]
 ---
 
 This is going to be a little reference of installing Tailscale on Proxmox LXC with Debian OS.

@@ -17,3 +17,9 @@ So far I have a Jellyfin LXC connected using SMB/CIFS. I have connected it by
 sudo mount -t cifs //10.0.1.120/Media /mnt/media -o username=chris,password=password,vers-3.0
 ```
 This seems to be the best solution so far, but time will tell. 
+
+To make it persistant, mounting via fstab works.
+```
+//server/share  /mnt/mountpoint  cifs  username=user,password=pass,uid=1000,gid=1000  0  0
+```
+then you can use ```sudo mount -a``` to mount. 
